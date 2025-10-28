@@ -1,85 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Shop UNAD - Plataforma de Comercio Electrónico</title>
-  <link rel="stylesheet" href="estilos.css">
-  <script defer src="script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>E-Shop UNAD — Plataforma de Comercio Electrónico (Simulada)</title>
+  <meta name="description" content="E-Shop UNAD — simulación frontend de ecommerce: autenticación, perfiles, catálogo, carrito, pago simulado, seguimiento, reseñas y soporte." />
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_unad_color.png" alt="Logo UNAD" class="logo">
-    <h1>E-Shop UNAD</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#funcionalidades">Funcionalidades</a></li>
-        <li><a href="#objetivos">Objetivos</a></li>
-        <li><a href="#evaluacion">Evaluación de Calidad</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_UNAD.png" alt="UNAD logo" class="brand-logo">
+        <div class="brand-text">
+          <h1>E-Shop UNAD</h1>
+          <p class="muted">Caso de estudio — Grupo 88 | Calidad de Software</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Menú principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#carrito">Carrito</a>
+        <a href="#seguimiento">Seguimiento</a>
+        <a href="#soporte">Soporte</a>
+      </nav>
+
+      <div class="actions">
+        <div id="userArea" class="user-area">
+          <button id="btnLogin" class="btn btn-outline">Iniciar sesión</button>
+        </div>
+        <button id="btnCart" class="btn btn-primary">Carrito (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
   </header>
 
-  <section id="inicio" class="seccion">
-    <h2>Bienvenido a E-Shop UNAD</h2>
-    <p>
-      E-Shop es una plataforma de comercio electrónico desarrollada como caso de estudio académico por el Grupo 88 de la Universidad Nacional Abierta y a Distancia (UNAD). Su propósito es ofrecer una experiencia de compra moderna, segura y eficiente, aplicando los principios de calidad de software establecidos en la norma ISO/IEC 25010.
-    </p>
-  </section>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Plataforma E-Shop — Caso de Estudio</h2>
+          <p>Aplicación simulada de comercio electrónico para evaluación de calidad (ISO/IEC 25010). Funcionalidades demo: autenticación, perfiles, catálogo, carrito, pago (simulado), seguimiento de pedidos, reseñas y soporte.</p>
+          <div class="cta">
+            <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+            <a href="#funcionalidades" class="btn btn-outline">Ver funcionalidades</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5de4b7ee7b1a2a0df3f6c6a4c8c6e5f1" alt="Compras online">
+        </div>
+      </div>
+    </section>
 
-  <section id="funcionalidades" class="seccion">
-    <h2>Principales Funcionalidades</h2>
-    <ul>
-      <li>Autenticación y gestión de perfiles de usuario.</li>
-      <li>Catálogo de productos interactivo con búsqueda filtrada.</li>
-      <li>Carrito de compras y procesamiento de pagos en línea.</li>
-      <li>Seguimiento de pedidos y actualización de estado.</li>
-      <li>Sistema de reseñas y calificaciones de productos.</li>
-      <li>Soporte al cliente mediante chat y correo.</li>
-    </ul>
-  </section>
+    <section id="funcionalidades" class="section">
+      <div class="container">
+        <h3>Funcionalidades incluidas (simuladas)</h3>
+        <ul class="features-list">
+          <li><strong>Autenticación y gestión de perfiles:</strong> registro, inicio/cierre de sesión y edición básica de perfil (almacenado en memoria).</li>
+          <li><strong>Catálogo de productos:</strong> listado, búsqueda y filtros por categoría; vista detallada (modal).</li>
+          <li><strong>Carrito de compras:</strong> agregar, eliminar y actualizar cantidades; resumen con cálculo de envío.</li>
+          <li><strong>Procesamiento de pagos (simulado):</strong> proceso de checkout que genera un ID de pedido y lo guarda en memoria.</li>
+          <li><strong>Seguimiento de pedidos:</strong> consulta por ID para ver estado y items (simulado).</li>
+          <li><strong>Reseñas y calificaciones:</strong> usuarios autenticados pueden dejar reseñas por producto.</li>
+          <li><strong>Soporte al cliente:</strong> formulario de contacto que guarda solicitudes en memoria (simulado).</li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="objetivos" class="seccion">
-    <h2>Objetivos del Proyecto</h2>
-    <p>
-      Garantizar que E-Shop cumpla con altos estándares de calidad, confiabilidad y seguridad, mediante la aplicación de pruebas funcionales, de rendimiento y usabilidad.
-      El objetivo general es proporcionar un entorno confiable y eficiente que optimice la experiencia de compra de los usuarios y la gestión interna de productos y pedidos.
-    </p>
-  </section>
+    <section id="catalogo" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h3>Catálogo de productos</h3>
+          <div class="search-filter">
+            <input id="searchInput" type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+            <select id="categoryFilter" aria-label="Filtrar por categoría">
+              <option value="all">Todas las categorías</option>
+              <option value="electronics">Electrónica</option>
+              <option value="home">Hogar</option>
+              <option value="books">Libros</option>
+            </select>
+          </div>
+        </div>
 
-  <section id="evaluacion" class="seccion">
-    <h2>Evaluación de Calidad del Software</h2>
-    <p>
-      Se aplicó el modelo ISO/IEC 25010 para evaluar las siguientes dimensiones de calidad:
-    </p>
-    <ul>
-      <li><strong>Fiabilidad:</strong> estabilidad del sistema durante las pruebas automatizadas.</li>
-      <li><strong>Usabilidad:</strong> interfaz clara, accesible y coherente con la identidad UNAD.</li>
-      <li><strong>Eficiencia de desempeño:</strong> tiempos de respuesta óptimos y fluidez en la navegación.</li>
-      <li><strong>Mantenibilidad:</strong> código modular, documentado y escalable.</li>
-      <li><strong>Seguridad:</strong> gestión de autenticación y protección de datos.</li>
-    </ul>
-    <p>
-      La automatización de pruebas se ejecutó con <strong>Selenium WebDriver</strong> en Google Colab, validando la funcionalidad, la estabilidad y el rendimiento general del sistema.
-    </p>
-  </section>
+        <div id="productsGrid" class="products-grid" role="list">
+          <!-- Productos inyectados por JS -->
+        </div>
+      </div>
+    </section>
 
-  <section id="contacto" class="seccion">
-    <h2>Equipo de Desarrollo</h2>
-    <p><strong>Grupo 88 - Curso Calidad de Software</strong></p>
-    <ul>
-      <li>Sebastián Hernández Buitrago</li>
-      <li>Laura Biviana Peña Acosta</li>
-      <li>Miguel Chaparro Forero</li>
-      <li>Paola Andrea Vargas</li>
-    </ul>
-    <p>Universidad Nacional Abierta y a Distancia - UNAD<br>Octubre de 2025</p>
-  </section>
+    <section id="carrito" class="section section-soft">
+      <div class="container">
+        <h3>Carrito de compras</h3>
+        <div class="cart-layout">
+          <div class="cart-items" id="cartItems" aria-live="polite">
+            <p class="muted">Tu carrito está vacío — agrega productos desde el catálogo.</p>
+          </div>
+          <aside class="cart-summary" aria-label="Resumen del carrito">
+            <h4>Resumen</h4>
+            <p>Items: <span id="summaryCount">0</span></p>
+            <p>Total: <strong id="summaryTotal">$0.00</strong></p>
+            <label for="shipping">Tipo de envío</label>
+            <select id="shipping" aria-label="Seleccionar envío">
+              <option value="standard" data-price="0">Estándar (gratis)</option>
+              <option value="express" data-price="15">Exprés ($15)</option>
+            </select>
+            <button id="checkoutBtn" class="btn btn-primary" disabled>Proceder al pago (simulado)</button>
+            <div id="checkoutMsg" class="muted small" aria-live="polite"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 E-Shop UNAD | Proyecto académico - Grupo 88</p>
-  </footer>
+    <section id="seguimiento" class="section">
+      <div class="container">
+        <h3>Seguimiento de pedidos</h3>
+        <p>Introduzca el ID de pedido (ejemplo: <code>ORD-2025-0001</code>) para consultar el estado.</p>
+        <div class="inline-form">
+          <input id="trackInput" type="text" placeholder="ID de pedido (p. ej. ORD-2025-0001)">
+          <button id="trackBtn" class="btn btn-outline">Consultar</button>
+        </div>
+        <div id="trackResult" class="card muted" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="resenas" class="section section-soft">
+      <div class="container">
+        <h3>Reseñas de usuarios</h3>
+        <div id="reviewsList" class="reviews-list">
+          <!-- reviews inyectadas -->
+        </div>
+
+        <h4>Dejar una reseña (debe iniciar sesión)</h4>
+        <form id="reviewForm" class="form-inline">
+          <input id="revName" type="text" placeholder="Tu nombre (se autocompleta si estás logueado)" required>
+          <select id="revRating" required>
+            <option value="">Calificación</option>
+            <option value="5">5 — Excelente</option>
+            <option value="4">4 — Muy bueno</option>
+            <option value="3">3 — Bueno</option>
+            <option value="2">2 — Regular</option>
+            <option value="1">1 — Malo</option>
+          </select>
+          <textarea id="revText" placeholder="Tu comentario" rows="2" required></textarea>
+          <button class="btn btn-primary" type="submit">Enviar reseña</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="soporte" class="section">
+      <div class="container">
+        <h3>Soporte al cliente</h3>
+        <p>Completa el siguiente formulario y el equipo (simulado) procesará la solicitud.</p>
+        <form id="supportForm" class="support-form">
+          <div class="grid-2">
+            <input id="supName" type="text" placeholder="Nombre completo" required>
+            <input id="supEmail" type="email" placeholder="Correo electrónico" required>
+          </div>
+          <select id="supTopic" required>
+            <option value="">Seleccione tema</option>
+            <option value="producto">Producto</option>
+            <option value="pedido">Pedido</option>
+            <option value="pago">Pago</option>
+            <option value="otro">Otro</option>
+          </select>
+          <textarea id="supMessage" placeholder="Describe tu solicitud" rows="4" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+            <div id="supportFeedback" class="muted small" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>E-Shop UNAD</strong> — Caso de estudio | Grupo 88 — UNAD
+          <p class="muted small">Prototipo académico. Los pagos y almacenamiento son simulados para pruebas.</p>
+        </div>
+        <div class="footer-actions">
+          <a href="#inicio">Volver arriba</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal / Login & Profile -->
+  <div id="modalOverlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <button id="closeModal" class="modal-close" aria-label="Cerrar">✕</button>
+      <h3 id="modalTitle">Iniciar sesión</h3>
+      <form id="loginForm" class="form">
+        <input id="loginEmail" type="email" placeholder="Correo electrónico" required />
+        <input id="loginPass" type="password" placeholder="Contraseña" required />
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Entrar (simulado)</button>
+          <button id="btnRegister" type="button" class="btn btn-outline">Crear cuenta (simulado)</button>
+        </div>
+        <div id="loginMsg" class="muted small"></div>
+      </form>
+      <div id="profileView" class="hidden">
+        <h4>Mi perfil</h4>
+        <label>Nombre</label>
+        <input id="profileName" type="text">
+        <label>Correo</label>
+        <input id="profileEmail" type="email" disabled>
+        <div class="form-actions">
+          <button id="saveProfile" class="btn btn-primary">Guardar</button>
+          <button id="logoutBtn" class="btn btn-outline">Cerrar sesión</button>
+        </div>
+        <div id="profileMsg" class="muted small"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
