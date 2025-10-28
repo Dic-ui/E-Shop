@@ -2,84 +2,57 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Shop UNAD - Plataforma de Comercio Electrónico</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Propósito del Proyecto — E-Shop UNAD</title>
   <link rel="stylesheet" href="estilos.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="https://www.unad.edu.co/templates/unad_general/images/logoUNAD-HD.png" alt="Logo UNAD" class="logo">
-    <h1>E-Shop UNAD</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#funcionalidades">Funcionalidades</a></li>
-        <li><a href="#objetivos">Objetivos</a></li>
-        <li><a href="#evaluacion">Evaluación de Calidad</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- Encabezado -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_unad_color.png" alt="Logo UNAD" class="brand-logo">
+        <div class="brand-text">
+          <h1>Propósito del Proyecto — E-Shop UNAD</h1>
+          <p>Grupo 88 | Universidad Nacional Abierta y a Distancia (UNAD)</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="pruebas.html">Plan de Pruebas</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="inicio" class="seccion">
-    <h2>Bienvenido a E-Shop UNAD</h2>
-    <p>
-      E-Shop es una plataforma de comercio electrónico desarrollada como caso de estudio académico por el Grupo 88 de la Universidad Nacional Abierta y a Distancia (UNAD). Su propósito es ofrecer una experiencia de compra moderna, segura y eficiente, aplicando los principios de calidad de software establecidos en la norma ISO/IEC 25010.
-    </p>
-  </section>
+  <!-- Cuerpo principal -->
+  <main class="section">
+    <div class="container">
+      <h2>Propósito del Proyecto E-Shop</h2>
+      <p><strong>E-Shop UNAD</strong> es una plataforma académica de comercio electrónico que busca mejorar la experiencia de compra en línea y optimizar la gestión de productos, pedidos y usuarios. El proyecto fue desarrollado como caso de estudio del curso <em>Calidad de Software</em>.</p>
 
-  <section id="funcionalidades" class="seccion">
-    <h2>Principales Funcionalidades</h2>
-    <ul>
-      <li>Autenticación y gestión de perfiles de usuario.</li>
-      <li>Catálogo de productos interactivo con búsqueda filtrada.</li>
-      <li>Carrito de compras y procesamiento de pagos en línea.</li>
-      <li>Seguimiento de pedidos y actualización de estado.</li>
-      <li>Sistema de reseñas y calificaciones de productos.</li>
-      <li>Soporte al cliente mediante chat y correo.</li>
-    </ul>
-  </section>
+      <h3>Objetivos Específicos</h3>
+      <ul class="features-list">
+        <li>Analizar y aplicar estándares de calidad de software ISO/IEC 25010.</li>
+        <li>Simular procesos de autenticación, compra y soporte dentro del sitio.</li>
+        <li>Implementar pruebas automatizadas para validar la funcionalidad del sistema.</li>
+        <li>Evaluar el comportamiento del sistema en condiciones de uso realista.</li>
+      </ul>
 
-  <section id="objetivos" class="seccion">
-    <h2>Objetivos del Proyecto</h2>
-    <p>
-      Garantizar que E-Shop cumpla con altos estándares de calidad, confiabilidad y seguridad, mediante la aplicación de pruebas funcionales, de rendimiento y usabilidad.
-      El objetivo general es proporcionar un entorno confiable y eficiente que optimice la experiencia de compra de los usuarios y la gestión interna de productos y pedidos.
-    </p>
-  </section>
+      <h3>Alcance</h3>
+      <p>El alcance del proyecto abarca la simulación de un sistema completo de comercio electrónico sin base de datos, implementando módulos de autenticación, catálogo, carrito, pago y soporte, dentro de un solo archivo HTML. Las pruebas permiten evaluar la interacción, rendimiento y estabilidad visual del sistema.</p>
 
-  <section id="evaluacion" class="seccion">
-    <h2>Evaluación de Calidad del Software</h2>
-    <p>
-      Se aplicó el modelo ISO/IEC 25010 para evaluar las siguientes dimensiones de calidad:
-    </p>
-    <ul>
-      <li><strong>Fiabilidad:</strong> estabilidad del sistema durante las pruebas automatizadas.</li>
-      <li><strong>Usabilidad:</strong> interfaz clara, accesible y coherente con la identidad UNAD.</li>
-      <li><strong>Eficiencia de desempeño:</strong> tiempos de respuesta óptimos y fluidez en la navegación.</li>
-      <li><strong>Mantenibilidad:</strong> código modular, documentado y escalable.</li>
-      <li><strong>Seguridad:</strong> gestión de autenticación y protección de datos.</li>
-    </ul>
-    <p>
-      La automatización de pruebas se ejecutó con <strong>Selenium WebDriver</strong> en Google Colab, validando la funcionalidad, la estabilidad y el rendimiento general del sistema.
-    </p>
-  </section>
+      <div class="actions">
+        <a href="index.html" class="btn btn-primary">← Volver al inicio</a>
+        <a href="pruebas.html" class="btn btn-outline">Ver plan de pruebas</a>
+      </div>
+    </div>
+  </main>
 
-  <section id="contacto" class="seccion">
-    <h2>Equipo de Desarrollo</h2>
-    <p><strong>Grupo 88 - Curso Calidad de Software</strong></p>
-    <ul>
-      <li>Sebastián Hernández Buitrago</li>
-      <li>Laura Biviana Peña Acosta</li>
-      <li>Miguel Chaparro Forero</li>
-      <li>Paola Andrea Vargas</li>
-    </ul>
-    <p>Universidad Nacional Abierta y a Distancia - UNAD<br>Octubre de 2025</p>
-  </section>
-
-  <footer>
-    <p>© 2025 E-Shop UNAD | Proyecto académico - Grupo 88</p>
+  <!-- Pie -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 E-Shop UNAD — Grupo 88 | Caso de Estudio de Calidad de Software</p>
+    </div>
   </footer>
 </body>
 </html>
