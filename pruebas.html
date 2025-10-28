@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Evaluación de Calidad de Software E-Shop — Grupo 88 UNAD</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_UNAD.png" alt="Logo UNAD" class="logo">
+    <h1>Sistema de Evaluación de Calidad de Software E-Shop</h1>
+    <h2>Grupo Colaborativo 88 - Universidad Nacional Abierta y a Distancia (UNAD)</h2>
+    <nav>
+      <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#modelo">Modelo ISO/IEC 25010</a></li>
+        <li><a href="#plan">Plan de Pruebas</a></li>
+        <li><a href="#conclusiones">Conclusiones</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="introduccion" class="seccion">
+      <h2>Introducción</h2>
+      <p>En el presente trabajo se aborda el análisis y desarrollo de un sistema de gestión de incidencias orientado a mejorar la eficiencia operativa dentro de una organización. A través de la implementación de herramientas tecnológicas y metodologías ágiles, se busca optimizar el proceso de identificación, seguimiento y resolución de problemas técnicos o administrativos que puedan surgir en el entorno laboral.</p>
+      <p>Este proyecto se enmarca dentro del contexto académico de la asignatura de Ingeniería del Software, y ha sido elaborado por el Grupo 88 como parte de su formación práctica en el diseño y desarrollo de soluciones informáticas. Además, se presenta la evaluación de calidad del sistema <strong>E-Shop</strong>, una aplicación de comercio electrónico, aplicando el modelo <strong>ISO/IEC 25010</strong> como guía metodológica.</p>
+    </section>
+    <section id="objetivos" class="seccion">
+      <h2>Objetivos</h2>
+      <ul>
+        <li>Diseñar un sistema funcional que permita registrar y gestionar incidencias de manera estructurada y eficiente.</li>
+        <li>Aplicar principios de ingeniería del software para garantizar la calidad, escalabilidad y mantenibilidad del sistema propuesto.</li>
+        <li>Fomentar el trabajo colaborativo entre los integrantes del grupo, promoviendo la distribución equitativa de tareas y responsabilidades.</li>
+        <li>Desarrollar habilidades prácticas en el uso de tecnologías actuales como bases de datos, interfaces gráficas y control de versiones.</li>
+        <li>Evaluar el impacto del sistema en la mejora de procesos internos, mediante pruebas y validaciones que aseguren su correcto funcionamiento.</li>
+      </ul>
+    </section>
+    <section id="modelo" class="seccion">
+      <h2>Modelo ISO/IEC 25010</h2>
+      <p>El modelo ISO/IEC 25010 es un estándar internacional que define un marco para evaluar la calidad del software mediante ocho características principales:</p>
+      <ul>
+        <li>Funcionalidad</li><li>Fiabilidad</li><li>Usabilidad</li><li>Eficiencia</li><li>Mantenibilidad</li><li>Portabilidad</li><li>Seguridad</li><li>Compatibilidad</li>
+      </ul>
+      <p>En el caso de estudio <strong>E-Shop</strong>, estas dimensiones se aplicaron para asegurar que la plataforma de comercio electrónico cumpliera con los más altos estándares de calidad, garantizando estabilidad, seguridad y una experiencia de usuario óptima.</p>
+    </section>
+    <section id="plan" class="seccion">
+      <h2>Plan de Pruebas</h2>
+      <p>Para el sistema <strong>E-Shop</strong>, el plan de pruebas se diseñó siguiendo las etapas recomendadas por el modelo ISO/IEC 25010, priorizando las áreas más críticas del comercio electrónico: autenticación, carrito de compras y pagos.</p>
+      <h3>Tipos de Pruebas</h3>
+      <ul>
+        <li>Pruebas funcionales: validación de flujos de registro, compra y pago.</li>
+        <li>Pruebas de rendimiento: simulación de hasta 500 usuarios concurrentes con Apache JMeter.</li>
+        <li>Pruebas de usabilidad: evaluación de accesibilidad y experiencia del usuario.</li>
+        <li>Pruebas de seguridad: detección de vulnerabilidades con OWASP ZAP y Burp Suite.</li>
+        <li>Pruebas de compatibilidad: ejecución en distintos navegadores y dispositivos móviles.</li>
+        <li>Pruebas de mantenibilidad: verificación de actualizaciones sin afectación de otros módulos.</li>
+      </ul>
+      <h3>Herramientas utilizadas</h3>
+      <ul>
+        <li><strong>Selenium</strong> y <strong>JUnit</strong> para automatización funcional.</li>
+        <li><strong>SonarQube</strong> para análisis de código.</li>
+        <li><strong>Apache JMeter</strong> para rendimiento.</li>
+        <li><strong>OWASP ZAP</strong> y <strong>Burp Suite</strong> para seguridad.</li>
+        <li><strong>TestRail</strong> para la gestión de casos de prueba y métricas.</li>
+      </ul>
+      <h3>Resultados esperados</h3>
+      <ul>
+        <li>Tiempo de respuesta menor a 2 segundos.</li>
+        <li>Tasa de éxito en transacciones igual o superior al 99%.</li>
+        <li>Puntaje de satisfacción del usuario igual o superior a 8/10.</li>
+        <li>Sin vulnerabilidades críticas detectadas.</li>
+      </ul>
+    </section>
+    <section id="conclusiones" class="seccion">
+      <h2>Conclusiones</h2>
+      <p>El modelo ISO/IEC 25010 ha demostrado ser una herramienta eficaz para estructurar y ejecutar un proceso de evaluación de calidad integral, permitiendo identificar fortalezas y debilidades del software <strong>E-Shop</strong> en dimensiones clave como funcionalidad, seguridad y usabilidad.</p>
+      <p>La planificación y ejecución de pruebas en módulos críticos permitió validar el cumplimiento de requisitos funcionales y no funcionales, garantizando una experiencia de usuario satisfactoria y segura. El uso de herramientas especializadas facilitó la automatización, el análisis de rendimiento y la detección de vulnerabilidades, contribuyendo a una evaluación técnica más precisa y eficiente.</p>
+      <p>A pesar de las restricciones de tiempo y recursos, se logró una cobertura significativa de pruebas, cumpliendo con los criterios de salida establecidos y generando entregables valiosos para la toma de decisiones en el proyecto.</p>
+    </section>
+    <section id="referencias" class="seccion">
+      <h2>Referencias</h2>
+      <ul>
+        <li>González-Sánchez, J.-L., Montero-Simarro, F., & Gutiérrez-Vela, F.-L. (2012). <em>Evolución del concepto de usabilidad como indicador de calidad del software.</em> El Profesional de la Información, 21(5), 529–536.</li>
+        <li>Piattini Velthuis, M. G. (2015). <em>Calidad de Sistemas de Información</em> (3ª ed.). RA-MA Editorial.</li>
+        <li>Hernández Cruz, L. M., et al. (2020). <em>Análisis del modelo de calidad en uso y la sostenibilidad aplicando la Norma ISO/IEC 25010.</em> CISTI Proceedings.</li>
+        <li>Abuchar Porras, A. (2023). <em>Metodologías ágiles para el desarrollo de software.</em> Editorial Universidad Distrital Francisco José de Caldas.</li>
+      </ul>
+    </section>
+    <section id="integrantes" class="seccion">
+      <h2>Integrantes del Grupo 88</h2>
+      <ul>
+        <li>Sebastián Hernández Buitrago</li>
+        <li>Laura Biviana Peña Acosta</li>
+        <li>Miguel Chaparro Forero</li>
+        <li>Paola Andrea Vargas</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Grupo 88 — Universidad Nacional Abierta y a Distancia (UNAD)</p>
+  </footer>
+</body>
+</html>
