@@ -11,12 +11,12 @@
 (() => {
   // === Datos de catálogo y estado en memoria ===
   const products = [
-    { id: 'p1', title: 'Auriculares Bluetooth X1', category:'electronics', price: 59.99, img:'https://images.unsplash.com/photo-1585386959984-a4155227c9d4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6f4d6e8b0d8c2b1a3fb7c8f6d22f3b4d', desc:'Auriculares inalámbricos con cancelación de ruido.' },
+    { id: 'p1', title: 'Auriculares Bluetooth X1', category:'electronics', price: 59.99, img:'https://unsplash.com/es/s/fotos/Auriculares-Bluetooth-X1', desc:'Auriculares inalámbricos con cancelación de ruido.' },
     { id: 'p2', title: 'Smartwatch Pro 4', category:'electronics', price: 129.00, img:'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5de4b7ee7b1a2a0df3f6c6a4c8c6e5f1', desc:'Monitor de actividad con GPS y 7 días de batería.' },
     { id: 'p3', title: 'Cafetera Compacta', category:'home', price: 79.50, img:'https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a1f1f1c0bd3cfe8f0d3a5b1b7b6a2c2', desc:'Cafetera de cápsulas con tanque de 1L.' },
-    { id: 'p4', title: 'Lámpara LED de Mesa', category:'home', price: 24.99, img:'https://images.unsplash.com/photo-1505691723518-36a0f90b2c9c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=8c1c9a0b7f5e3c4d2a7b1a2d3e4c5b6a', desc:'Lámpara regulable con puerto USB.' },
+    { id: 'p4', title: 'Lámpara LED de Mesa', category:'home', price: 24.99, img:'https://unsplash.com/es/s/fotos/L%C3%A1mpara-LED-de-Mesa', desc:'Lámpara regulable con puerto USB.' },
     { id: 'p5', title: 'Libro: Ingeniería de Software', category:'books', price: 39.90, img:'https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e', desc:'Texto de referencia sobre procesos y calidad de software.' },
-    { id: 'p6', title: 'Mochila Urbana', category:'home', price: 49.00, img:'https://images.unsplash.com/photo-1520975912217-0e5f1fda1b71?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b2a1c0d9e8f7a6b5c4d3e2f1a0b9c8d', desc:'Mochila resistente, compartimento para laptop 15".' }
+    { id: 'p6', title: 'Mochila Urbana', category:'home', price: 49.00, img:'https://unsplash.com/es/s/fotos/Mochila-Urbana', desc:'Mochila resistente, compartimento para laptop 15".' }
   ];
 
   // Estado en memoria
